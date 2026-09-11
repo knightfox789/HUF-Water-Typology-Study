@@ -1,31 +1,32 @@
 # Project Index — HUF Water Typology Study
 
 ## Purpose
-Create a recoverable, versioned research workspace for reviewing the Gujarat Water Typology Study and translating it into a transparent, reproducible analytical framework for current and future HUF/DSC water-security work.
+Create a recoverable, versioned research workspace for reviewing the Gujarat Water Typology Study, reverse-engineering the databases and analytical methods that produced its results, and translating that reconstruction into a reusable research framework, reproducible analytical engine and interactive dashboard.
 
 ## Core analytical lens
 For every study parameter, document the chain:
 
 **Parameter → sub-parameter → variable → data source → unit → processing → analytical method → comparison/relationship → result → interpretation → water-security implication → intervention.**
 
-For every published result, additionally reconstruct:
+For every published analytical output, reconstruct the stronger lineage chain:
 
-**Report result → source file → sheet/layer → source fields → cleaning → transformation → formula/GIS/statistical method → intermediate output → final result → validation.**
+**Report result → source file → sheet/layer → source fields → geography/year/unit → cleaning → transformation → formula/GIS/statistical method → intermediate output → final output → report comparison → reproduction status.**
 
 ## Current workstreams
 
 ### A. Reverse-engineer the research report
 - Identify all major parameters and sub-parameters.
+- Catalogue every meaningful map, chart, table, classification, scenario and recommendation.
 - Reconstruct formulas, normalisation, classification and comparison logic.
 - Separate secondary-data analysis from primary-data validation.
 - Capture state-level and region-level findings.
 - Flag numerical, methodological or reporting inconsistencies without silently correcting the source.
 
-### B. Build a Research Analysis Chain Matrix
+### B. Build the Research Analysis Chain Matrix
 Working file:
 - `05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md`
 
-Fields:
+Fields include:
 - Parameter
 - Sub-parameter
 - Indicator
@@ -42,27 +43,33 @@ Fields:
 - Limitation
 - Proposed current-use adaptation
 
-Current status: **v0.1 created from the recovered executive summary and earlier project record.** Fields not yet verified from the detailed report remain explicitly unresolved rather than inferred.
+Current status: **v0.1 created; detailed source confirmation continues from the complete report.**
 
-### C. Historical result-to-data reverse engineering
-Master plan:
+### C. Master reverse-engineering and reusable-engine plan
+Governing file:
 - `06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md`
 
-Primary objective:
-- map every important report output to the exact original Excel/GIS/Word/source database, fields, processing, formulas and analytical methods;
-- reproduce the published result;
-- record the result-data lineage and validation status.
+The Master Plan is a living document and must be updated whenever a critical chat finding changes project objectives, methodology, architecture, sequencing, data/lineage rules, QA/QC, dashboard behaviour, portability or project governance.
 
-### D. Reusable research framework and engine
-After historical reproduction:
-- abstract the methodology from the historical Gujarat data;
-- classify methods as retain/update/replace/optional/new;
-- build data-independent analytical modules;
-- support temporal refreshes for Gujarat;
-- support adaptation to other states.
+### D. Reusable research and dashboard system
+Future outputs include:
+- Report Result Register
+- Master Source File Register
+- Master Data Dictionary
+- Formula & Method Register
+- Result-to-Data Lineage Matrix
+- Result Reproduction Audit
+- reusable Water Typology Research Framework
+- configurable analytical engine
+- interactive dashboard with visible calculation/provenance logic
 
-### E. Interactive dashboard
-Dashboard development follows validated reverse engineering and engine design. It will expose results, maps, trends, comparisons and a visible `How was this calculated?` provenance/methodology layer.
+## Storage and recovery policy
+Every project artifact generated or materially updated by ChatGPT must be stored in both:
+
+1. GitHub repository `knightfox789/HUF-Water-Typology-Study` — canonical versioned record.
+2. ChatGPT Library folder `/water typology study/` — synchronized recovery/working mirror.
+
+Where practical, the Library mirrors the GitHub relative folder structure. User-provided source files are evidence and are not automatically duplicated unless requested.
 
 ## Canonical files
 - `01_CHAT_LOG.md` — chronological record of important sessions and decisions.
@@ -70,13 +77,13 @@ Dashboard development follows validated reverse engineering and engine design. I
 - `03_IDEAS_BACKLOG.md` — future ideas and unresolved questions.
 - `04_CONTINUATION_AND_RECOVERY.md` — latest state, next actions, recovery instructions.
 - `05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md` — source-grounded parameter matrix under active development.
-- `06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md` — approved project roadmap from source data to reusable research engine/dashboard.
+- `06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md` — governing roadmap and project rules.
 - `../sources/SOURCE_REGISTER.md` — source provenance and known source inconsistencies.
 
-## Status
-**Master Plan v1.0 established. Historical reverse-engineering execution is ready to begin.**
+## Current source state
+The complete **555-page `Research Report and Executive Summary.pdf`** is available in the project conversation and can now support detailed result decomposition and methodology reconstruction.
 
-### Immediate next sprint
-1. Build the **Report Result Register** from the complete 555-page report.
-2. Receive/inventory the user's original study database (Excel, Word, GIS, survey and other files) without altering originals.
-3. Create the first end-to-end lineage pilot using **Rainfall 1995–2020 → regional trend → rainfall-groundwater relationship**.
+## Status
+**Phase 1A — Report Output Decomposition / Report Result Register preparation.**
+
+Immediate next substantive step: systematically catalogue the major outputs in the complete report and assign `RESULT_ID`s before mapping the original Excel/GIS/other study databases to those results.
