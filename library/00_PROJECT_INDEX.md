@@ -18,7 +18,10 @@ For every study parameter, document the chain:
 - Flag numerical, methodological or reporting inconsistencies without silently correcting the source.
 
 ### B. Build a Research Analysis Chain Matrix
-Planned fields:
+Working file:
+- `05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md`
+
+Fields:
 - Parameter
 - Sub-parameter
 - Indicator
@@ -35,6 +38,8 @@ Planned fields:
 - Limitation
 - Proposed current-use adaptation
 
+Current status: **v0.1 created from the recovered executive summary and earlier project record.** Fields not exposed by the executive summary are explicitly marked for detailed-report confirmation.
+
 ### C. Future ideas
 - Recreate water-typology engine in a transparent data model.
 - Compare original study methodology with current HUF Water Security Project methods.
@@ -46,9 +51,10 @@ Planned fields:
 - `02_RESEARCH_ANALYSIS_CHAIN.md` — technical study breakdown.
 - `03_IDEAS_BACKLOG.md` — future ideas and unresolved questions.
 - `04_CONTINUATION_AND_RECOVERY.md` — latest state, next actions, recovery instructions.
+- `05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md` — source-grounded parameter matrix under active development.
 - `../sources/SOURCE_REGISTER.md` — source provenance and known source inconsistencies.
 
 ## Status
-**Phase 0 — repository and recovery system initialized.**
+**Phase 1 — Research Analysis Chain Matrix in progress.**
 
-Next substantive phase: build the full parameter-by-parameter Research Analysis Chain Matrix from the source report.
+Current next substantive step: recover/reopen the full detailed research report and replace unresolved provenance/formula fields in `05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md` with exact source references and calculations.
