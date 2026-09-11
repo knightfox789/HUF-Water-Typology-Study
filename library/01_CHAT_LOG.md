@@ -78,9 +78,6 @@ GitHub repository:
 ChatGPT Library folder:
 `/water typology study`
 
-### Next step
-Before any new analytical work, preserve the current study breakdown and create a continuation/recovery note.
-
 ---
 
 ## 2026-09-11 — Session 002
@@ -114,46 +111,62 @@ This remains distinct from the earlier detailed-methodology record of 10 watersh
 Created:
 - `library/05_RESEARCH_ANALYSIS_CHAIN_MATRIX.md`
 
-The matrix now covers:
-1. Rainfall
-2. Surface Water
-3. Irrigation Infrastructure
-4. Groundwater
-5. Soil
-6. Agriculture
-7. Animal Husbandry
-
-It also documents the cross-parameter water-demand/supply calculation, normalization logic, Water/Soil Quality composite, and final dynamic scenario construction.
-
-### Source-grounded details newly recorded
-- Rainfall analysis period: 1995–2020; state average 821 mm.
-- Groundwater-development status: CGWB 2019 Annual Report.
-- Irrigation-source trend: 2008–09 to 2017–18.
-- WRD water-harvesting inventory: about 5.55 lakh structures to March 2018.
-- Primary structure functionality sample in executive summary: 227 structures in 12 watersheds.
-- Land degradation reference year: 2015–16.
-- Cropping-area trend: 2008–09 to 2017–18.
-- SIP crop-water benchmark: State Irrigation Plan 2016–20.
-- Crop-return data: APMC 2021.
-- Micro-irrigation source: GGRC Report 2019–20.
-- Dairy/milk-procurement trend: 2008–09 to 2017–18.
-- Demand reference year: 2017–18.
-- Dynamic supply/demand normalization: absolute MCM divided by Gross Cropped Area; 33-district average used as threshold.
-- Water/Soil Quality composite variables: district-area share with TDS >1500 ppm, Fluoride >1.0 mg/l, and Nitrogen <280 kg/ha.
-- Worst-case dynamic scenario reported in 10 of 33 districts.
-
-### Methodological discipline maintained
-The new matrix visibly separates:
-1. source-derived facts;
-2. recorded interpretation from the earlier detailed review;
-3. proposed current-use adaptation.
-
-Where the executive summary does not disclose the dataset name, formula or processing detail, the matrix says **Detailed report confirmation required** rather than guessing.
+The matrix covers the seven formal parameters and the cross-parameter water-demand/supply calculation, normalization logic, Water/Soil Quality composite, and dynamic scenario construction.
 
 ### Open items
-- Recover/reopen the full detailed report.
-- Reconstruct the published demand–supply gap percentages from absolute values and confirm the denominator.
-- Verify exact normalization equations and Water/Soil Quality index direction.
-- Reconcile sample-size statements without overwriting either source.
-- Reconcile the water-harvesting-structure count inconsistency.
-- Replace unresolved matrix fields with exact source agency, year, unit, table/map and formula references.
+- Reopen the full detailed report.
+- Reconstruct published demand–supply gap percentages from absolute values.
+- Verify normalization equations and Water/Soil Quality index direction.
+- Reconcile source inconsistencies without overwriting either statement.
+
+---
+
+## 2026-09-11 — Session 003
+
+### User clarification of the overall project objective
+The user confirmed that the original databases used for the study still exist, including Excel sheets, Word documents, GIS shapefiles and related study files, but the analytical path from those databases to the published report results has been forgotten.
+
+The project therefore has two linked objectives:
+
+1. **Historical reverse engineering** — reconstruct exactly how the original databases produced the maps, tables, figures, classifications, relationships and conclusions published in the study.
+2. **Reusable research system** — extract the analytical framework so that the study can later be rerun with new temporal datasets for Gujarat and adapted to other states, with an interactive dashboard as the presentation layer.
+
+### Detailed source now available
+The attached `Research Report and Executive Summary.pdf` is the complete study source (555 pages), enabling result-by-result reconstruction from the detailed study rather than relying only on the executive summary.
+
+### Master Plan created
+Created:
+- `library/06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md`
+
+The Master Plan defines:
+- report output decomposition;
+- original database inventory and preservation;
+- data dictionary and standardization reconstruction;
+- result-to-data lineage matrix;
+- parameter-by-parameter reproduction;
+- water-balance and cross-parameter reconstruction;
+- typology/scenario engine reconstruction;
+- reusable research framework abstraction;
+- reproducible analytical engine;
+- interactive dashboard;
+- Gujarat temporal refresh;
+- portability to other states;
+- quality-control and documentation standards.
+
+### Key architectural decision
+The project will use five connected registries:
+1. Source File Register
+2. Report Result Register
+3. Variable/Data Dictionary
+4. Formula & Method Register
+5. Result-to-Data Lineage Matrix
+
+Every major report output will receive a unique `RESULT_ID` and a reproduction status from R0 (not started) through R6/R7 (exact or explained reproduction), with explicit statuses for conflicts/unresolved evidence.
+
+### Immediate next sprint
+1. Build the Report Result Register from the full 555-page report.
+2. Inventory the user's original study database without altering originals.
+3. Run the first end-to-end lineage pilot using **Rainfall 1995–2020 → regional trend → rainfall-groundwater relationship**.
+
+### Dashboard rule
+Do not begin dashboard coding before the analytical lineage and reproduction system is established. The final dashboard must expose a `How was this calculated?` view containing data source, formula/method, year, geography, units and limitations.
