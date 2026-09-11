@@ -170,3 +170,30 @@ Every major report output will receive a unique `RESULT_ID` and a reproduction s
 
 ### Dashboard rule
 Do not begin dashboard coding before the analytical lineage and reproduction system is established. The final dashboard must expose a `How was this calculated?` view containing data source, formula/method, year, geography, units and limitations.
+
+---
+
+## 2026-09-11 — Session 004
+
+### User governance instruction
+The user established a permanent project rule:
+- whenever a chat produces a **critical** project insight, decision or clarification, update the Master Plan and the relevant project documentation rather than leaving the decision only in chat;
+- every project file generated or materially updated by ChatGPT must be stored in **both GitHub and the ChatGPT Library folder**.
+
+### Governance implementation
+`06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md` updated to **v1.1** with:
+- a definition of critical project items;
+- living Master Plan maintenance rules;
+- mandatory GitHub + ChatGPT Library dual persistence;
+- sync verification rules;
+- GitHub as the canonical versioned record for generated project documentation/code;
+- Library as synchronized recovery/working mirror;
+- a substantive-session close protocol.
+
+### Project state clarified
+- Full 555-page report is available and is now the primary report source for Sprint 1A.
+- Current execution state is **Phase 1A — Report Output Decomposition / Report Result Register preparation**.
+- Dashboard coding remains deferred until historical lineage and reproduction are validated.
+
+### Storage rule
+For generated project artifacts, preserve the same filename and relative folder structure across GitHub and `/water typology study/` where practical. User-provided source files remain evidence in their original source location unless explicit duplication is requested.
