@@ -14,12 +14,15 @@ Repository initialized on **2026-09-11**.
 
 Phase 0 repository/recovery setup is complete.
 
-The project has now moved from report review into **historical analytical reverse engineering + reusable framework design**.
+The project has moved from report review into **historical analytical reverse engineering + reusable framework design**.
+
+Current execution state:
+**Phase 1A — Report Output Decomposition / Report Result Register preparation.**
 
 ### Primary source
 `Research Report and Executive Summary.pdf`
 
-The complete attached source is now available and contains the detailed study plus executive summary (**555 pages**).
+The complete attached source is available and contains the detailed study plus executive summary (**555 pages**).
 
 ### Original study database
 User has confirmed possession of the underlying study databases, including Excel sheets, Word documents, GIS shapefiles and related study files. These will be used to reconstruct how the published results were produced.
@@ -41,10 +44,24 @@ Separate analytical methodology from historical Gujarat data so the framework ca
 - presented through an interactive dashboard.
 
 ## Master plan
-Canonical master roadmap:
+Canonical governing roadmap:
 - `library/06_MASTER_PLAN_REVERSE_ENGINEERING_AND_REUSABLE_RESEARCH_ENGINE.md`
 
-It defines the full sequence from source inventory through result reproduction, framework abstraction, analytical engine, dashboard, temporal refresh and other-state adaptation.
+Current version: **v1.1**.
+
+The Master Plan is a living document and must be updated whenever a critical chat finding changes project objectives, methodology, phase sequence, source interpretation, formulas, data model, QA/QC, dashboard architecture, portability or project governance.
+
+## Mandatory dual-storage rule
+Every project file generated or materially updated by ChatGPT must be stored in both:
+
+1. **GitHub:** `knightfox789/HUF-Water-Typology-Study` — canonical versioned record.
+2. **ChatGPT Library:** `/water typology study/` — synchronized recovery/working mirror.
+
+Where practical, use the same filename and relative folder structure in both locations.
+
+User-provided source files are evidence and are not automatically duplicated unless requested.
+
+Before reporting a generated/updated project artifact as complete, verify that both GitHub and Library persistence succeeded. If either fails, state the failure explicitly rather than claiming dual sync.
 
 ## Approved analytical chain
 For every parameter:
@@ -86,12 +103,15 @@ Every result will be tracked from:
 
 ## Work completed
 - Repository and recovery structure established.
+- ChatGPT Library project folder established.
 - Initial report-wide analytical chain documented.
 - Seven-parameter Research Analysis Chain Matrix v0.1 created.
-- Full attached research report is now available.
-- User's historical database-reconstruction objective has been clarified.
-- Master Plan v1.0 created.
+- Full attached research report is available.
+- User's historical database-reconstruction objective clarified.
+- Master Plan created and updated to v1.1.
 - Project index and session log updated.
+- Critical-insight capture rule established.
+- Mandatory GitHub + ChatGPT Library dual-persistence rule established.
 
 ## Source facts already verified
 - Seven formal study parameters: Rainfall, Surface Water, Irrigation Infrastructure, Groundwater, Soil, Agriculture, Animal Husbandry.
@@ -150,10 +170,13 @@ Every future dashboard output must support:
 
 with source, method, unit, year, geography, transformation and limitations.
 
-## Update rule
-After every substantial analysis session:
-1. append the session summary to `01_CHAT_LOG.md`;
-2. update technical findings in the relevant methodology/matrix file;
-3. add unapproved thoughts to `03_IDEAS_BACKLOG.md` only when applicable;
+## Substantive-session close/update rule
+After every substantial analysis/build session:
+1. update the relevant technical/register/methodology file(s);
+2. update the Master Plan if a critical project-level item changed;
+3. append the session summary to `01_CHAT_LOG.md`;
 4. update `sources/SOURCE_REGISTER.md` when provenance changes;
-5. update this recovery file with the latest project state.
+5. update this recovery file with the latest state and exact next task;
+6. persist generated/updated artifacts to GitHub;
+7. mirror the same artifacts to ChatGPT Library `/water typology study/`;
+8. verify both storage locations before reporting completion.
