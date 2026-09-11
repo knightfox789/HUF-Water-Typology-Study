@@ -1,8 +1,9 @@
 # Master Plan — HUF Water Typology Study Reverse Engineering, Reusable Research Framework & Interactive Dashboard
 
-**Version:** v1.0  
+**Version:** v1.1  
 **Date:** 2026-09-11  
-**Repository:** `knightfox789/HUF-Water-Typology-Study`
+**Repository:** `knightfox789/HUF-Water-Typology-Study`  
+**ChatGPT Library mirror:** `/water typology study/`
 
 ---
 
@@ -43,6 +44,8 @@ The report also states that heterogeneous secondary datasets were standardized a
 
 Therefore, this project will treat the study not merely as a report, but as an underlying analytical workflow that must be reconstructed.
 
+The complete **555-page `Research Report and Executive Summary.pdf`** is now available in the project conversation and will be treated as the primary report target for result decomposition and detailed-method reconstruction.
+
 ---
 
 # 3. Non-negotiable project principles
@@ -74,6 +77,58 @@ Years, geographies, source agencies, thresholds and file names should be configu
 
 ## 3.6 Reproduction before redesign
 The original calculation should first be reproduced as faithfully as possible. Improved methodology comes only after the historical result is understood.
+
+## 3.7 Critical-insight capture and Master Plan maintenance
+No critical project decision should remain only inside a chat message.
+
+A finding or decision is considered **critical** when it materially changes or clarifies one or more of the following:
+- project objective or scope;
+- research question or analytical framework;
+- phase/sprint sequence;
+- source interpretation or provenance;
+- formula, normalization, classification or validation rule;
+- data model, file structure or lineage design;
+- QA/QC or reproducibility rule;
+- dashboard architecture or indicator behaviour;
+- portability/temporal-refresh design;
+- project governance, storage or recovery process.
+
+When such a critical item emerges from a conversation:
+1. update this Master Plan where it affects project direction or governance;
+2. update the relevant technical/methodology/register file;
+3. append the decision/session to `01_CHAT_LOG.md`;
+4. update `04_CONTINUATION_AND_RECOVERY.md` so a new chat can restart correctly.
+
+The Master Plan is therefore a **living governing document**, not a one-time roadmap.
+
+## 3.8 Dual persistence: GitHub + ChatGPT Library
+Every project file **generated or materially updated by ChatGPT** must be persisted in both locations:
+
+1. **GitHub:** `knightfox789/HUF-Water-Typology-Study` — canonical versioned project record.
+2. **ChatGPT Library:** `/water typology study/` — synchronized recovery/working mirror.
+
+This rule applies to generated project artifacts including, where relevant:
+- Markdown documentation;
+- CSV/JSON registries;
+- spreadsheets;
+- Word/PDF reports;
+- methodology specifications;
+- code/configuration files;
+- dashboard specifications;
+- validation outputs;
+- generated maps/charts/exports.
+
+Where practical, preserve the same filename and relative folder structure in both locations.
+
+**User-provided source files are evidence, not generated artifacts.** They remain in their original source location unless the user explicitly asks for duplication or archival.
+
+## 3.9 Sync verification and source of truth
+After creating or materially updating a project artifact:
+- save/update it in GitHub;
+- save/update the matching Library copy;
+- verify that both writes succeeded before claiming dual persistence.
+
+For ChatGPT-generated project documentation/code, **GitHub is the canonical versioned source of truth** and ChatGPT Library is the synchronized mirror/recovery copy. If a mismatch is ever detected, compare versions explicitly rather than silently choosing one.
 
 ---
 
@@ -279,10 +334,13 @@ An output should not be considered dashboard-ready before R5, and ideally R6/R7.
 
 Completed:
 - GitHub repository;
+- ChatGPT Library project folder;
 - recovery files;
 - analytical-chain documentation;
 - source register;
-- initial seven-parameter matrix.
+- initial seven-parameter matrix;
+- Master Plan;
+- dual-persistence and critical-insight governance rule.
 
 ---
 
@@ -790,10 +848,15 @@ The project should ultimately contain:
 18. Data Refresh Guide
 19. Other-State Adaptation Guide
 20. Version/Change Log
+21. Project artifact sync / storage verification record, where useful
+
+All generated documentation/artifacts must follow the dual-persistence rule in Section 3.8.
 
 ---
 
-# 13. Recommended repository evolution
+# 13. Recommended repository and Library evolution
+
+GitHub structure:
 
 ```text
 /library/              project memory, methodology and recovery
@@ -810,6 +873,24 @@ The project should ultimately contain:
 /config/               geography/year/threshold/source configuration
 ```
 
+ChatGPT Library should mirror generated artifacts under:
+
+```text
+/water typology study/
+    library/
+    sources/
+    inventory/
+    data_dictionary/
+    lineage/
+    methods/
+    reproduction/
+    framework/
+    engine/
+    dashboard/
+    validation/
+    config/
+```
+
 Do not reorganize historical source files until the inventory is complete.
 
 ---
@@ -819,7 +900,7 @@ Do not reorganize historical source files until the inventory is complete.
 The next work should NOT begin with dashboard coding.
 
 ## Sprint 1A — Build Report Result Register
-Start from the complete 555-page report and catalogue major analytical outputs.
+The complete 555-page `Research Report and Executive Summary.pdf` is now available. Catalogue its major analytical outputs and assign `RESULT_ID`s.
 
 Initial target:
 - state-level results;
@@ -864,7 +945,24 @@ The project is successful when we can answer these questions for any major dashb
 7. **What limitations apply?**
 8. **How should the same analysis be run with new data?**
 9. **How should it be adapted for another state?**
+10. **Can the governing decision, method and artifact be recovered from both GitHub and the Library mirror?**
 
 The final goal is not merely a dashboard.
 
 The final goal is a **transparent, versioned Water Typology Research & Decision-Support System** in which the dashboard is one presentation layer over a reusable analytical framework.
+
+---
+
+# 16. Substantive-session close protocol
+
+At the end of every substantial analysis/build session:
+
+1. update the relevant technical/register/methodology file(s);
+2. update this Master Plan if any critical project-level item changed;
+3. append the session/decision summary to `01_CHAT_LOG.md`;
+4. update `04_CONTINUATION_AND_RECOVERY.md` with current state and exact next task;
+5. persist all generated/updated artifacts to GitHub;
+6. mirror the same generated/updated artifacts to ChatGPT Library `/water typology study/`;
+7. verify both storage locations before reporting completion.
+
+This protocol is mandatory for project continuity.
